@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Suite">
+  <test thread-count="4" parallel="classes" name="ChromeTest">
+<parameter name = "browserName" value = "Chrome"></parameter>
+    <classes>
+	  <class name="SauceDemoTestNGAnnotations.TC1LoginFunctionality"/>
+      <class name="SauceDemoTestNGAnnotations.TC03FilterValidation"/>
+      <class name="SauceDemoTestNGAnnotations.TC04SelectProduct"/>
+      <class name="SauceDemoTestNGAnnotations.TC02AddToCartValidation"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="4" parallel="classes" name="FirefoxTest">
+<parameter name = "browserName" value = "FireFox"></parameter>
+    <classes>
+	  <class name="SauceDemoTestNGAnnotations.TC1LoginFunctionality"/>
+      <class name="SauceDemoTestNGAnnotations.TC03FilterValidation"/>
+      <class name="SauceDemoTestNGAnnotations.TC04SelectProduct"/>
+      <class name="SauceDemoTestNGAnnotations.TC02AddToCartValidation"/>
+      
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="4" parallel="classes" name="MsEdgeTest">
+<parameter name = "browserName" value = "MsEdge"></parameter>
+    <classes>
+	  <class name="SauceDemoTestNGAnnotations.TC1LoginFunctionality"/>
+      <class name="SauceDemoTestNGAnnotations.TC03FilterValidation"/>
+      <class name="SauceDemoTestNGAnnotations.TC04SelectProduct"/>
+      <class name="SauceDemoTestNGAnnotations.TC02AddToCartValidation"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
